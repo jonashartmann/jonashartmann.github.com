@@ -1,59 +1,130 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Jonas Hartmann</title>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Jonas Hartmann</title>
+        <meta name="description" content="Home for the projects of Jonas Hartmann">
+        <meta name="viewport" content="width=device-width">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <link rel="stylesheet" href="stylesheets/base.css">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="javascripts/scale.fix.js"></script>
-    <script src="javascripts/gist-embed.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="without-description">
-        <h1>Jonas Hartmann</h1>
-        <ul>
-          <li class="single"><a href="https://github.com/jonashartmann">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <code data-gist-id="41b5655895503f4fa16b" data-gist-file="mobile.md"
-              data-gist-hide-footer="true" data-gist-hide-line-numbers="true"></code>
-      </section>
-      <section id="file-resizecanvas-js">
-        <header>
-          <h3>Resizing canvas element with jQuery</h3>
-        </header>
-        <code data-gist-id="41b5655895503f4fa16b" data-gist-file="resizecanvas.js"
-              data-gist-hide-footer="true" data-gist-hide-line-numbers="true"></code>
-      </section>
-    </div>
-    <footer>
-      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
-    </footer>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+            padding-top: 20px;
+            padding-bottom: 40px;
+            }
 
-    <!-- Google Analytics -->
-    <script type="text/javascript">
+            /* Custom container */
+            .container-narrow {
+            margin: 0 auto;
+            max-width: 700px;
+            }
+            .container-narrow > hr {
+            margin: 30px 0;
+            }
 
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-39541687-1']);
-    _gaq.push(['_trackPageview']);
+            /* Main marketing message and sign up button */
+            .jumbotron {
+            margin: 60px 0;
+            text-align: center;
+            }
+            .jumbotron h1 {
+            font-size: 72px;
+            line-height: 1;
+            }
+            .jumbotron .btn {
+            font-size: 21px;
+            padding: 14px 24px;
+            }
 
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
+            /* Supporting marketing content */
+            .marketing {
+            margin: 60px 0;
+            }
+            .marketing p + h4 {
+            margin-top: 28px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="css/main.css">
 
-    </script>
-  </body>
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- This code is taken from http://twitter.github.io/bootstrap/examples/marketing-narrow.html -->
+
+        <div class="container-narrow">
+
+          <div class="masthead">
+            <ul class="nav nav-pills pull-right">
+              <li class="active"><a href="#">About</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <h3 class="muted">Jonas Hartmann</h3>
+          </div>
+
+          <hr>
+
+          <div class="jumbotron">
+            <h1>Super awesome marketing speak!</h1>
+            <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <a class="btn btn-large btn-success" href="#">Sign up today</a>
+          </div>
+
+          <hr>
+
+          <div class="row-fluid marketing">
+            <div class="span6">
+              <h4>Subheading</h4>
+              <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+              <h4>Subheading</h4>
+              <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+              <h4>Subheading</h4>
+              <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            </div>
+
+            <div class="span6">
+              <h4>Subheading</h4>
+              <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+              <h4>Subheading</h4>
+              <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+              <h4>Subheading</h4>
+              <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="footer">
+            <p>&copy; Jonas Hartmann 2013</p>
+          </div>
+
+        </div> <!-- /container -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
 </html>
