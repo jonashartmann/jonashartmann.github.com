@@ -20,8 +20,8 @@
 
     // legend
     this.radar.add(protovis.Dot)
-      .top(940)
-      .left(50)
+      .top(10)
+      .left(w/2)
       .shape("circle")
       .fillStyle("grey")
       .strokeStyle("grey")
@@ -31,8 +31,8 @@
         .text("unchanged")
         .textStyle("black");
     this.radar.add(protovis.Dot)
-      .top(940)
-      .left(126)
+      .top(30)
+      .left(w/2)
       .shape("triangle")
       .fillStyle("grey")
       .strokeStyle("grey")
@@ -116,10 +116,10 @@
 
         var left = radarData.radar_data[i].left;
         var top = radarData.radar_data[i].top + quadrantFontSize + spacer + (stageIndex * headingFontSize) + (offsetIndex * fontSize);
-        if (stageIndex > 1) {
-          left = left + 130;
-          top = top - (2 * headingFontSize) - (midIndex * fontSize);
-        }
+        // if (stageIndex > 1) {
+        //   left = left + 130;
+        //   top = top - (2 * headingFontSize) - (midIndex * fontSize);
+        // }
 
         // stage label
         this.radar.add(protovis.Label)

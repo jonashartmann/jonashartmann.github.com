@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="loading">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +9,9 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.orange-light_blue.min.css" />
-    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
     <script defer src="js/vendor/jquery-1.10.1.min.js"></script>
     <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
@@ -54,9 +55,14 @@
         <!-- MAIN CONTENT -->
         <!-- ============ -->
         <main class="mdl-layout__content">
+
             <!-- Section Radar -->
-            <h1 class="profile-centered">Hartmann's Tech Radar — 2016.09</h1>
-            <div id="radar"></div>
+            <h2 class="profile-centered mdl-cell--hide-tablet mdl-cell--hide-phone">Hartmann's Tech Radar — 2016.09</h2>
+            <div class="mdl-grid">
+                <div id="radar" class="mdl-cell mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+                <a href="techradar.html" class="mdl-cell mdl-cell--12-col mdl-cell--hide-desktop mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Hartmann's Tech Radar</a>
+            </div>
+
             <!-- Section Cards -->
             <div class="mdl-grid profile-max-width">
                 <div class="mdl-cell mdl-cell--2-offset-tablet mdl-card mdl-shadow--4dp profile-card">
@@ -108,9 +114,13 @@
                     <a href="projects.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Fun Projects!</a>
                 </div> -->
             </div>
-            <div class="mdl-grid profile-centered profile-max-width" style="background-color:black;">
+
+            <!-- Section Values -->
+            <div class="mdl-grid profile-centered profile-max-width" style="background-color: lightgrey;">
                 <img src="/images/values.png" class="mdl-cell mdl-cell--5-col profile-values">
             </div>
+
+            <!-- Section Footer -->
             <footer class="mdl-mini-footer">
                 <div class="mdl-mini-footer__left-section">
                     <div class="mdl-logo">&copy; Jonas Hartmann</div>

@@ -1,41 +1,40 @@
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+html {
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+html, body {
+    /* For the loading indicator to be vertically centered ensure */
+    /* the html and body elements take up the full viewport */
+    min-height: 100%;
+}
+
+html.loading {
+    background: #3b5fa4 url('/images/pacman.gif') no-repeat 50% 50%;
+
+    /* Ensures that the transition only runs in one direction */
+    -webkit-transition: background-color 0;
+    -moz-transition: background-color 0;
+    -o-transition: background-color 0;
+    transition: background-color 0;
+}
+
 body {
-	/*
-	background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSI+CjxyZWN0IHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgZmlsbD0iIzI4MjgyOCI+PC9yZWN0Pgo8Y2lyY2xlIGN4PSIzIiBjeT0iNC4zIiByPSIxLjAiIGZpbGw9IiMzOTM5MzkiPjwvY2lyY2xlPgo8Y2lyY2xlIGN4PSIzIiBjeT0iMyIgcj0iMS4wIiBmaWxsPSJibGFjayI+PC9jaXJjbGU+CjxjaXJjbGUgY3g9IjEwLjUiIGN5PSIxMi41IiByPSIxLjAiIGZpbGw9IiMzOTM5MzkiPjwvY2lyY2xlPgo8Y2lyY2xlIGN4PSIxMC41IiBjeT0iMTEuMyIgcj0iMS4wIiBmaWxsPSJibGFjayI+PC9jaXJjbGU+Cjwvc3ZnPg==");
-	*/
-	background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nNDEnIGhlaWdodD0nNDEnIHZpZXdCb3g9JzAgMCAxMCAxMCc+Cgk8ZyBpZD0nZyc+CgkJPHBhdGggZD0nTTUgNmwtNiAtNiB2LTIgbDYgNicgZmlsbC1vcGFjaXR5PScwJyBzdHJva2U9JyMyMjInLz4KCQk8cGF0aCBkPSdNNSA1bDYgLTYgdi0yIGwtNiA2JyBmaWxsLW9wYWNpdHk9JzAnIHN0cm9rZT0nIzE4MTgxOCcvPgoJPC9nPgoJPHVzZSB4bGluazpocmVmPScjZycgeT0nLTQnLz4KCTx1c2UgeGxpbms6aHJlZj0nI2cnIHk9JzQnLz4KCTx1c2UgeGxpbms6aHJlZj0nI2cnIHk9JzgnLz4KCTx1c2UgeGxpbms6aHJlZj0nI2cnIHk9JzEyJy8+Cjwvc3ZnPg==);
-	background-color: #111;
-
-	color: #999999
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
 }
 
-.masthead .apps {
-	display: inline;
+html.loading body {
+    /* Make the contents of the body opaque during loading */
+    opacity: 0;
+
+    /* Ensures that the transition only runs in one direction */
+    -webkit-transition: opacity 0;
+    -moz-transition: opacity 0;
+    -o-transition: opacity 0;
+    transition: opacity 0;
 }
-
-.masthead .apps a {
-	text-decoration: none;
-}
-
-a[target='_blank'] {
-	text-decoration: none;
-}
-
-h1 p {
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -123,7 +123,6 @@ img.article-image {
 
 .profile-max-width {
   margin: auto;
-  background-color: cyan;
 }
 
 .profile-copy {
@@ -169,6 +168,10 @@ img.article-image {
 .profile-contact form {
   max-width: 550px;
   margin: auto;
+}
+
+.mdl-layout__content {
+  margin-top: 25px;
 }
 
 footer {

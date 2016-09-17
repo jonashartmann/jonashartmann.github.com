@@ -13,11 +13,15 @@
 		console.log('Reply @ https://twitter.com/jonashart');
 	};
 
-	// printMessage();
-
 	$(function () {
+		var elem = $('.mdl-layout');
+		elem[0].addEventListener('mdl-componentupgraded', function (e) {
+			// printMessage();
+			$('html').removeClass('loading');
+		});
+
 		var height = 1000;
-		var width = 1200;
+		var width = 1024;
 		var techRadar = new window.Radar(height, width);
 		var data = window.radarData;
 		techRadar.render(data.prepare(height, width));
