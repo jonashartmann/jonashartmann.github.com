@@ -3,22 +3,31 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Profile and portfolio of Jonas Hartmann">
+    <meta name="description" content="Profile of Jonas Hartmann">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Focus & Passion</title>
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.orange-light_blue.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <script defer src="js/vendor/jquery-1.10.1.min.js"></script>
+    <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <script defer src="js/vendor/lodash.underscore.min.js"></script>
+    <script defer src="js/vendor/protovis-d3.2.js"></script>
+    <script src="js/radar/radarData.js"></script>
+    <script defer src="js/radar/radar.js"></script>
+    <script defer src="js/main.js"></script>
 </head>
 
 <body>
     <div class="mdl-layout mdl-js-layout">
-        <header class="mdl-layout__header mdl-layout__header--scroll portfolio-header">
-            <div class="mdl-layout__header-row portfolio-logo-row">
+        <!-- HEADER -->
+        <header class="mdl-layout__header mdl-layout__header--scroll profile-header">
+            <div class="mdl-layout__header-row profile-logo-row">
                 <span class="mdl-layout__title">
-                    <div class="portfolio-logo"></div>
+                    <div class="profile-logo"></div>
                 </span>
 <!--                 <div class="mdl-layout-spacer"></div>
  -->                <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
@@ -32,7 +41,7 @@
         </header>
         <div class="mdl-layout__drawer mdl-layout--small-screen-only">
             <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                <div class="portfolio-logo"></div>
+                <div class="profile-logo"></div>
                 <a class="mdl-navigation__link is-active" href="index.html">Home</a>
 <!--                 <a class="mdl-navigation__link" href="blog.html">Blog</a>
  -->
@@ -41,9 +50,16 @@
                 <a class="mdl-navigation__link" href="contact.html">Contact</a>
             </nav>
         </div>
+        <!-- ============ -->
+        <!-- MAIN CONTENT -->
+        <!-- ============ -->
         <main class="mdl-layout__content">
-            <div class="mdl-grid portfolio-max-width">
-                <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp portfolio-card">
+            <!-- Section Radar -->
+            <h1 class="profile-centered">Hartmann's Tech Radar — 2016.09</h1>
+            <div id="radar"></div>
+            <!-- Section Cards -->
+            <div class="mdl-grid profile-max-width">
+                <div class="mdl-cell mdl-cell--2-offset-tablet mdl-card mdl-shadow--4dp profile-card">
                     <!-- <div class="mdl-card__media">
                         <img class="article-image" src=" images/example-work01.jpg" border="0" alt="">
                     </div> -->
@@ -51,14 +67,14 @@
                         <h2 class="mdl-card__title-text">Focus</h2>
                     </div>
                     <div class="mdl-card__supporting-text">
-                        I believe that <b>this is a core principle</b> to achieve meaningful results.<br>Although I love to play around with multiple technologies, I focus on the best ones at hand to deliver solutions.<br>
+                        I believe that <b>this is a core principle</b> to achieve meaningful results.<br>Although I love to play around with multiple technologies, I focus on delivering solutions.<br>
                         That is a pattern I've always used to guide me into delivering amazing results.
                     </div>
                     <!-- <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Read more</a>
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="profile-example01.html">Read more</a>
                     </div> -->
                 </div>
-                <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp portfolio-card">
+                <div class="mdl-cell mdl-card mdl-shadow--4dp profile-card">
                     <!-- <div class="mdl-card__media">
                         <img class="article-image" src=" images/example-work07.jpg" border="0" alt="">
                     </div> -->
@@ -70,12 +86,30 @@
                         Since then, I've realized that I actually had no clue about the possibilities. The learning rollercoaster is extensive and never ends.
                     </div>
                     <!-- <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Read more</a>
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="profile-example01.html">Read more</a>
                     </div> -->
                 </div>
-                <div class="mdl-cell mdl-cell--5-offset mdl-cell--3-offset-tablet mdl-cell--1-offset-phone">
-                    <a href="projects.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Fun Projects!</a>
+                <div class="mdl-cell mdl-card mdl-shadow--4dp profile-card">
+                    <!-- <div class="mdl-card__media">
+                        <img class="article-image" src=" images/example-work01.jpg" border="0" alt="">
+                    </div> -->
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Leadership</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        Leader leader leader leader<br>
+                        leader ledaer leader lader lader ladea raerlar
+                    </div>
+                    <!-- <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="profile-example01.html">Read more</a>
+                    </div> -->
                 </div>
+                <!-- <div class="mdl-cell mdl-cell--5-offset mdl-cell--3-offset-tablet mdl-cell--1-offset-phone">
+                    <a href="projects.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Fun Projects!</a>
+                </div> -->
+            </div>
+            <div class="mdl-grid profile-centered profile-max-width" style="background-color:black;">
+                <img src="/images/values.png" class="mdl-cell mdl-cell--5-col profile-values">
             </div>
             <footer class="mdl-mini-footer">
                 <div class="mdl-mini-footer__left-section">
@@ -90,7 +124,6 @@
             </footer>
         </main>
     </div>
-    <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
 </body>
 
 </html>

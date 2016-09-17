@@ -1,9 +1,9 @@
-.portfolio-header {
+.profile-header {
   position: relative;
   background-image: url(/images/header-bg.jpg);
 }
 
-.portfolio-header .mdl-layout__header-row {
+.profile-header .mdl-layout__header-row {
   padding: 0;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -20,15 +20,15 @@
   display: none;
 }
 
-.portfolio-logo-row {
+.profile-logo-row {
   min-height: 150px;
 }
 
-.is-compact .portfolio-logo-row {
+.is-compact .profile-logo-row {
   min-height: auto;
 }
 
-.portfolio-logo {
+.profile-logo {
   background: url(/images/personal_logo.svg) 50% no-repeat;
   background-size: cover;
   height: 150px;
@@ -36,41 +36,41 @@
   margin: auto auto -25px 22px;
 }
 
-.is-compact .portfolio-logo {
+.is-compact .profile-logo {
   height: 50px;
   width: 50px;
   margin-top: 7px;
 }
 
-.portfolio-navigation-row {
+.profile-navigation-row {
   background-color: rgba(0, 0, 0, 0.08);
   text-transform: uppercase;
   height: 45px;
 }
 
-.portfolio-navigation-row  .mdl-navigation {
+.profile-navigation-row  .mdl-navigation {
   text-align: center;
   max-width: 900px;
   width: 100%;
 }
 
-.portfolio-navigation-row .mdl-navigation__link {
+.profile-navigation-row .mdl-navigation__link {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
   line-height: 42px;
 }
 
-.portfolio-header .mdl-layout__drawer-button {
+.profile-header .mdl-layout__drawer-button {
     background-color: rgba(197, 197, 197, 0.44);
 }
 
-.portfolio-navigation-row .is-active {
+.profile-navigation-row .is-active {
   position: relative;
   font-weight: bold;
 }
 
-.portfolio-navigation-row .is-active:after {
+.profile-navigation-row .is-active:after {
   content: "";
   width: 70%;
   height: 2px;
@@ -82,27 +82,27 @@
   left: 15%;
 }
 
-.portfolio-card .mdl-card__title {
+.profile-card .mdl-card__title {
   padding-bottom: 0;
 }
 
-.portfolio-blog-card-full-bg {
+.profile-blog-card-full-bg {
   background: url(/images/example-blog03.jpg) center / cover;
 }
 
-.portfolio-blog-card-event-bg {
+.profile-blog-card-event-bg {
   background: url(/images/example-blog05.jpg) center / cover;
 }
 
-.portfolio-blog-card-strip-bg {
+.profile-blog-card-strip-bg {
   background: url(/images/example-blog06.jpg) center / cover;
 }
 
-.portfolio-blog-card-compact .mdl-card__title {
+.profile-blog-card-compact .mdl-card__title {
   padding-bottom: 0;
 }
 
-.portfolio-blog-card-bg > .mdl-card__actions {
+.profile-blog-card-bg > .mdl-card__actions {
   height: 52px;
   padding: 16px;
   background: rgba(0, 0, 0, 0.2);
@@ -113,12 +113,20 @@ img.article-image {
   height: auto;
 }
 
-.portfolio-max-width {
-  max-width: 900px;
-  margin: auto;
+.profile-values {
+  margin: 15px auto;
 }
 
-.portfolio-copy {
+.profile-centered {
+  text-align: center;
+}
+
+.profile-max-width {
+  margin: auto;
+  background-color: cyan;
+}
+
+.profile-copy {
   max-width: 700px;
 }
 
@@ -138,7 +146,7 @@ img.article-image {
   padding: 10px 0 0;
 }
 
-.portfolio-share-btn {
+.profile-share-btn {
   position: relative;
   float: right;
   top: -4px;
@@ -154,11 +162,11 @@ img.article-image {
     display: flex;
 }
 
-.portfolio-contact .mdl-textfield {
+.profile-contact .mdl-textfield {
   width: 100%;
 }
 
-.portfolio-contact form {
+.profile-contact form {
   max-width: 550px;
   margin: auto;
 }
