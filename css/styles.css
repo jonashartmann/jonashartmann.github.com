@@ -29,8 +29,8 @@
 }
 
 .profile-logo {
-  background: url(/images/personal_logo.svg) 50% no-repeat;
-  background-size: cover;
+/*  background: url(/images/personal_logo.svg) 50% no-repeat;
+  background-size: cover;*/
   height: 150px;
   width: 145px;
   margin: auto auto -25px 22px;
