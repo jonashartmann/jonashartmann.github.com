@@ -10,8 +10,7 @@
         <meta name="description" content="Software projects by Jonas Hartmann">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
-        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
         <link rel="stylesheet" href="css/main.css">
 
@@ -25,15 +24,22 @@
         <!-- This code is taken from http://twitter.github.io/bootstrap/examples/marketing-narrow.html -->
 
         <div class="container-narrow">
-
-          <div class="masthead">
-            <ul class="nav nav-pills pull-right">
-              <li class="active"><a href="/index.html"><i class="icon-home"></i> Home</a></li>
-              <li><a href="/projects.html"><i class="icon-cogs"></i> Projects</a></li>
-              <li><a href="http://itprozesse.wordpress.com" target='blank'><i class="icon-edit"></i> Blog</a></li>
-            </ul>
-            <h3 class="muted">Jonas Hartmann
-                <div class="apps">
+          <!-- Top Navigation -->
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                  <div class="profile-logo"></div>
+                </a>
+              </div>
+              <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <div class="apps pull-right">
                     <a target='_blank' href="https://github.com/jonashartmann"><i class="icon-github-sign" sr-only="github"></i></a>
                     <a target='_blank' href="https://twitter.com/jonashart"><i class="icon-twitter-sign"></i></a>
                     <a target='_blank' href="
@@ -42,8 +48,14 @@
                     https://www.xing.com/profile/Jonas_Hartmann9"><i class="icon-xing-sign"></i></a>
                     <a href="http://www.google.com/recaptcha/mailhide/d?k=01M-5_JFZdlyTM9R66vA2JdQ==&amp;c=PuRPN9ZeXuUEHXIdSxhz6FJGycsBxuCoMu83p5qPZ8g=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501M-5_JFZdlyTM9R66vA2JdQ\75\75\46c\75PuRPN9ZeXuUEHXIdSxhz6FJGycsBxuCoMu83p5qPZ8g\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address"><i class="icon-envelope"></i></a>
                 </div>
-            </h3>
-          </div>
+                <ul class="nav navbar-nav navbar-left">
+                  <li class="active"><a href="/index.html"><i class="icon-home"></i> Home</a></li>
+                  <li><a href="/projects.html"><i class="icon-cogs"></i> Projects</a></li>
+                  <li><a href="http://itprozesse.wordpress.com" target='blank'><i class="icon-edit"></i> Blog</a></li>
+                </ul>
+            </div>
+          </nav>
+          <!-- End of Top Navigation -->
 
           <hr>
 
@@ -84,10 +96,11 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-
         <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/vivus.min.js"></script>
 
-        <!--script src="js/main.js"></script-->
+        <!-- Custom JS -->
+        <script src="js/main.js"></script>
 
         <script>
             var _gaq=[['_setAccount','UA-39541687-1'],['_trackPageview']];

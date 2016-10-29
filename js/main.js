@@ -34,12 +34,14 @@
 	};
 
 	$(function () {
-		var logo = initLogo($('.profile-logo')[0], 'manual');
-		var mobileLogo = initLogo($('.profile-logo')[1], 'manual');
+		var logo = initLogo($('.profile-logo')[0]);
+		// var mobileLogo = initLogo($('.profile-logo')[1], 'manual');
 
 		var replayLogo = function replayLogo () {
 			logo.reset().play();
+			console.log('Hey');
 		};
+		replayLogo();
 
 		// var elem = $('.mdl-layout');
 		// elem[0].addEventListener('mdl-componentupgraded', function (e) {
