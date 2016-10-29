@@ -39,23 +39,9 @@
 
 		var replayLogo = function replayLogo () {
 			logo.reset().play();
-			console.log('Hey');
 		};
-		replayLogo();
-
-		// var elem = $('.mdl-layout');
-		// elem[0].addEventListener('mdl-componentupgraded', function (e) {
-		// 	if ($(e.target).hasClass('mdl-layout')) {
-		// 		$('html').removeClass('loading');
-		// 		setTimeout(replayLogo, 1);
-
-		// 		var $drawerButton = $('.mdl-layout__drawer-button');
-		// 		$drawerButton[0].addEventListener('click', function (e) {
-		// 			mobileLogo.reset().play();
-		// 		});
-		// 	}
-		// });
 
 		// initTechRadar(1000, 1024);
+		printMessage();
 	});
 })(window);
