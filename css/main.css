@@ -22,6 +22,13 @@ nav .navbar-brand {
 	margin-right: 10px;
 }
 
+.navbar-default .navbar-nav>li>a {
+	transition: all 0.5s;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color: #ff7a14;
+}
+
 .apps {
 	font-size: 14pt;
 }
@@ -48,12 +55,11 @@ nav .navbar-brand {
 }
 .top-image > div {
 	opacity: 0.6;
+	padding-right: 86px;
 }
 
-/* Main marketing message and sign up button */
 .jumbotron {
 	margin: 60px 0;
-	padding-right: 86px;
 	text-align: center;
 }
 .jumbotron h1 {
@@ -63,6 +69,17 @@ nav .navbar-brand {
 .jumbotron .btn {
 	font-size: 21px;
 	padding: 14px 24px;
+}
+.jumbotron .btn-info {
+    background-color: #ff7a14;
+}
+.jumbotron .btn-info:hover {
+    background-color: #dd6a11;
+    border-color: #c45d0f;
+}
+.jumbotron .btn-info:active {
+    background-color: #c45d0f;
+    border-color: #c45d0f;
 }
 
 /* Supporting marketing content */
