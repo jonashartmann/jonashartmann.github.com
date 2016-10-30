@@ -22,15 +22,23 @@ nav .navbar-brand {
 	margin-right: 10px;
 }
 
-.navbar .apps {
-	display: inline;
+.apps {
 	font-size: 14pt;
-	margin-top: 12px;
 }
-
-.navbar .apps a {
+.apps a {
 	text-decoration: none;
 	color: #777;
+	transition: all 0.5s;
+}
+.apps a:hover {
+	color: #ff7a14;
+}
+.navbar .apps {
+	display: inline;
+	margin-top: 12px;
+}
+.footer .apps {
+    text-align: right;
 }
 
 .top-image {

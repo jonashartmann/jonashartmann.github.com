@@ -34,12 +34,10 @@
 	};
 
 	$(function () {
-		var logo = initLogo($('.profile-logo')[0]);
-		// var mobileLogo = initLogo($('.profile-logo')[1], 'manual');
-
-		var replayLogo = function replayLogo () {
-			logo.reset().play();
-		};
+		var $logos = $('.profile-logo');
+		for (var i = 0; i < $logos.length; i++) {
+			var logo = initLogo($logos[i]);
+		}
 
 		// initTechRadar(1000, 1024);
 		printMessage();
