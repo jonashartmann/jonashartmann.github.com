@@ -45,6 +45,15 @@ document.addEventListener("DOMContentLoaded", function() {
 	'use strict';
 
 	var codeContainers = document.getElementsByClassName('code-container');
+
+	var writeToContainer = async function writeToContainer(container, text) {
+		var writeSpeed = container.getAttribute('data-write-speed') || 10;
+		var highlight = container.getAttribute('data-highlight') === "false" ? false : true;
+		
+		var codeWriter = new CodeWriter(writeSpeed).setHighlight(highlight);
+		await codeWriter.writeOnElement(container, text);
+	}
+
 	var start = async function start() {
 		for (let i = 0; i < codeContainers.length; i++) {
 			var container = codeContainers[i];
@@ -65,11 +74,22 @@ document.addEventListener("DOMContentLoaded", function() {
 		await start();
 	}
 
+	var runCommand = async function runCommand(command) {
+		var container = codeContainers[0];
+		if (!store[command]) {
+			await writeToContainer(container, ">>> Oops, what is '" + command + "'? <<<\n");
+		} else {
+			await writeToContainer(container, ">>> Running command '" + command + "' <<<\n");
+		}
+	}
+
 	var data = {
-		speed: 5,
+		speed: 1,
 		store: store,
 		restart: restart,
-		visible: true,
+		runCommand: runCommand,
+		command: "",
+		visible: false,
 		toggleVisibility: function() {
 			data.visible = data.visible ? false : true;
 		}

@@ -20,7 +20,7 @@
             <div class="control">
                 <label for="welcomeMsg">
                 </label>
-                <textarea name="welcomeMsg" v-model="store.welcome"></textarea>
+                <textarea name="welcomeMsg" v-model="store.hack"></textarea>
             </div>
             <div class="control">
                 <label for="speed">
@@ -31,9 +31,13 @@
             </div>
         </div>
         
-        <pre><div class="code-container language-hack" data-code="welcome" v-bind:data-write-speed="speed" data-highlight=true></div></pre>
-        <!-- <pre><code class="code-container language-javascript" data-code="whoAmI"></code></pre> -->
-        <!-- <pre><code class="code-container language-javascript" data-code="coreCompetencies"></code></pre> -->
+        <pre><code class="code-container language-hack" data-code="hack" v-bind:data-write-speed="speed" data-highlight=true></code></pre>
+        <!-- <pre><code class="code-container language-javascript" data-code="who" v-bind:data-write-speed="speed"></code></pre>
+        <pre><code class="code-container language-javascript" data-code="skills" v-bind:data-write-speed="speed"></code></pre> -->
+        <div class="control">
+            <input type="text" v-model="command" v-on:change="runCommand(command)"/>
+            <button class="hidden" v-on:click="runCommand(command)">Run</button>
+        </div>
     </div>
 </body>
 </html>

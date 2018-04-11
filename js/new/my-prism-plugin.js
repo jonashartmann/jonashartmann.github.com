@@ -6,6 +6,6 @@
             pattern: /[\w?]+/i,
             greedy: true
         },
-        'keyword': /[>.<]+/
+        'keyword': /[>.•<]+/
     };
 })(Prism);

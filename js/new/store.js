@@ -1,30 +1,42 @@
 (function(){
 
     var Store = {
-        whoAmI:
-function whoAmI() {
+        who:
+function who() {
     return {
         name: "Jonas Hartmann",
-        age: "N/A",
-        kind: "Terrestrian software engineering leader"
+        location: "Berlin",
+        species: "Terrestrian software engineering leader",
+        personality: "An open-minded and collaborative leader that keeps his head clear " 
+        + "to prepare for, adapt to and face any challenges of IT life"
     };
 }
 
-        ,coreCompetencies: 
-function coreCompetencies() {
+        ,skills: 
+function skills() {
     return {
-        languages: "portuguese, english, german",
-        syntax: "javascript, java, c#, php",
-        leadership: "hands-on"
+        skills: "javascript, java, c#, php",
+        leadership: "hands-on",
+        languages: {
+            english: "fluent",
+            german: "advanced",
+            portuguese: "native",
+            korean: "very basic"
+        }
     };
 }
 
-        ,welcome: 
-'> Intern Etsur Fer JHX 9000 ready and operational\n\
->>> Starting hack procedure <<<    .    .    .    .    .    .    .    .    .\n\
->>> Hack procedure complete <<<\n\n\
-> Can you see me?\n\
-.    .    .    .    .    .'
+        ,hack: 
+'>>> Starting hack procedure <<<\n\
+. . . . . . . . .\n\
+. . . . . . . . .\n\
+>>> Hack procedure complete <<<\n\
+. . . . . . . . .\n\
+>>> JHX 9000 ready and operational <<<\n\
+>>> Available commands: <<<\n\
+who\n\
+skills\n\
+'
     }
 
     window.Store = Store;
